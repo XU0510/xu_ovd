@@ -376,7 +376,7 @@ mTimeORB_Ext = std::chrono::duration_cast<std::chrono::duration<double,std::mill
         RemoveMovingKeyPoints(imGray, imDepth,xCoordinates,yCoordinates);
 #ifdef TIMES
         std::chrono::steady_clock::time_point RemoveMovingKeyPoints2 = std::chrono::steady_clock::now();
-        cout << "RemoveMovingKeyPoints time:" << std::chrono::duration_cast<std::chrono::duration<double> >(RemoveMovingKeyPoints2 - RemoveMovingKeyPoints1).count() <<endl;
+        cout << "RemoveMovingKeyPoints-time:" << std::chrono::duration_cast<std::chrono::duration<double> >(RemoveMovingKeyPoints2 - RemoveMovingKeyPoints1).count() <<endl;
 #endif
     }
 #endif
